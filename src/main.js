@@ -12,7 +12,7 @@ const config = {
     authRequired: false,
     auth0Logout: true,
     secret: process.env.CLIENT_SECRET,
-    baseURL: `http://localhost:${process.env.FRONT_PORT}`,
+    baseURL: `https://web2-lab1-kwjq.onrender.com/`,
     clientID: process.env.CLIENT_ID,
     issuerBaseURL: `https://${process.env.ISSUER_BASE_URL}`
 };
@@ -20,7 +20,7 @@ const config = {
 app.use(auth(config));
 
 app.listen(port, () => {
-    console.log(`Listening on http://localhost:${process.env.FRONT_PORT}`);
+    console.log(`Listening on https://web2-lab1-kwjq.onrender.com/`);
 });
 
 app.get('/', (req, res) => {

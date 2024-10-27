@@ -4,7 +4,7 @@ const authorizeUser = async () => {
         .find(row => row.startsWith('uuid='))
         ?.split('=')[1];
 
-    window.location.href = `http://localhost:3000/ticket/${uuid}`;
+    window.location.href = `https://web2-lab1-kwjq.onrender.com/ticket/${uuid}`;
 }
 
 authorizeUser();
