@@ -26,7 +26,7 @@ const pool = new Pool({
 
 app.use(express.json());
 
-app.listen(port, () => {
+app.listen("https://web2-lab1-api.onrender.com", () => {
     console.log(`Listening on https://web2-lab1-api.onrender.com`);
 })
 

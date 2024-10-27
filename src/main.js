@@ -19,8 +19,8 @@ const config = {
 
 app.use(auth(config));
 
-app.listen(port, () => {
-    console.log(`Listening on https://web2-lab1-kwjq.onrender.com/`);
+app.listen("https://web2-lab1-kwjq.onrender.com", () => {
+    console.log(`Listening on https://web2-lab1-kwjq.onrender.com`);
 });
 
 app.get('/', (req, res) => {
