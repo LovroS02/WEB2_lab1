@@ -55,7 +55,7 @@ app.post("/generate-ticket", jwtCheck, async (req, res) => {
         [vatin, firstName, lastName]
     );
 
-    const url = `https://web2-lab1-kwjq.onrender.com/ticket/${result.rows[0].uuid}`;
+    const url = `https://web2-lab1-lcu4.onrender.com/ticket/${result.rows[0].uuid}`;
     const qrCodeImage = await QRCode.toDataURL(url);
 
     res.status(200).send({ qrCode: qrCodeImage });

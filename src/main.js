@@ -12,7 +12,7 @@ const config = {
     authRequired: false,
     auth0Logout: true,
     secret: process.env.CLIENT_SECRET,
-    baseURL: `https://web2-lab1-kwjq.onrender.com`,
+    baseURL: `https://web2-lab1-lcu4.onrender.com`,
     clientID: process.env.CLIENT_ID,
     issuerBaseURL: `https://${process.env.ISSUER_BASE_URL}`
 };
@@ -20,7 +20,7 @@ const config = {
 app.use(auth(config));
 
 app.listen(3000, () => {
-    console.log(`Listening on https://web2-lab1-kwjq.onrender.com`);
+    console.log(`Listening on https://web2-lab1-lcu4.onrender.com`);
 });
 
 app.get('/', (req, res) => {
