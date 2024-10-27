@@ -8,7 +8,7 @@ const generateNewTicket = async () => {
     const lastName = document.getElementById("last-name").value;
 
     try {
-        const response = await fetch(`http://localhost:8000/generate-ticket`,
+        const response = await fetch(`https://web2-lab1-api.onrender.com/generate-ticket`,
             {
                 method: "POST",
                 headers: {

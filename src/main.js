@@ -12,7 +12,7 @@ const config = {
     authRequired: false,
     auth0Logout: true,
     secret: process.env.CLIENT_SECRET,
-    baseURL: `https://web2-lab1-kwjq.onrender.com/`,
+    baseURL: `https://web2-lab1-kwjq.onrender.com`,
     clientID: process.env.CLIENT_ID,
     issuerBaseURL: `https://${process.env.ISSUER_BASE_URL}`
 };

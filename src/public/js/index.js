@@ -4,7 +4,7 @@ const fetchTicketCount = async () => {
     const token = await getAccessToken();
 
     try {
-        const response = await fetch("http://localhost:8000/ticket-count",
+        const response = await fetch("https://web2-lab1-api.onrender.com/ticket-count",
             {
                 headers: {
                     "Authorization": `Bearer ${token}`

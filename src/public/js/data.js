@@ -5,7 +5,7 @@ const fetchTicketData = async () => {
 
     try {
         const uuid = window.location.pathname.split("/").pop();
-        const response = await fetch(`http://localhost:8000/ticket/${uuid}`,
+        const response = await fetch(`https://web2-lab1-api.onrender.com/ticket/${uuid}`,
             {
                 headers: {
                     "Authorization": `Bearer ${token}`

@@ -1,6 +1,6 @@
 export const getAccessToken = async () => {
     try {
-        const response = await fetch("http://localhost:8000/token");
+        const response = await fetch("https://web2-lab1-api.onrender.com/token");
 
         if (response.ok) {
             const data = await response.json();

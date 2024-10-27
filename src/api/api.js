@@ -27,7 +27,7 @@ const pool = new Pool({
 app.use(express.json());
 
 app.listen(port, () => {
-    console.log(`Listening on http://localhost:${process.env.BACK_PORT}`);
+    console.log(`Listening on https://web2-lab1-api.onrender.com`);
 })
 
 app.post("/generate-ticket", jwtCheck, async (req, res) => {
