@@ -19,7 +19,7 @@ const config = {
 
 app.use(auth(config));
 
-app.listen("https://web2-lab1-kwjq.onrender.com", () => {
+app.listen(3000, () => {
     console.log(`Listening on https://web2-lab1-kwjq.onrender.com`);
 });
 
