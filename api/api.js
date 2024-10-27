@@ -7,7 +7,6 @@ const { auth: jwtAuth } = require("express-oauth2-jwt-bearer");
 
 dotenv.config();
 const app = express();
-const port = 8000;
 
 const jwtCheck = jwtAuth({
     audience: `${process.env.AUDIENCE}`,
@@ -28,7 +27,7 @@ const pool = new Pool({
 app.use(express.json());
 
 app.listen(port, () => {
-    console.log(`Listening on http://localhost:${port}`);
+    console.log(`Listening on http://localhost:${process.env.BACK_PORT}`);
 })
 
 app.post("/generate-ticket", jwtCheck, async (req, res) => {

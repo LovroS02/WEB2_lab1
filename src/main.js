@@ -12,17 +12,15 @@ const config = {
     authRequired: false,
     auth0Logout: true,
     secret: process.env.CLIENT_SECRET,
-    baseURL: 'http://localhost:3000',
+    baseURL: `http://localhost:${process.env.FRONT_PORT}`,
     clientID: process.env.CLIENT_ID,
-    issuerBaseURL: 'https://dev-nlgz18ayezdzlmat.eu.auth0.com'
+    issuerBaseURL: `https://${process.env.ISSUER_BASE_URL}`
 };
 
 app.use(auth(config));
 
-const port = 3000;
-
 app.listen(port, () => {
-    console.log(`Listening on http://localhost:${port}`);
+    console.log(`Listening on http://localhost:${process.env.FRONT_PORT}`);
 });
 
 app.get('/', (req, res) => {
