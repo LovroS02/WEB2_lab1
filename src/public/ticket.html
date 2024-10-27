@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate Ticket</title>
+  </head>
+  <body>
+    <div id="new-ticket">
+      <label for="vatin">VATIN (OIB):</label>
+      <input type="text" id="vatin" />
+      <br />
+      <label for="first-name">First name:</label>
+      <input type="text" id="first-name" />
+      <br />
+      <label for="last-name">Last name:</label>
+      <input type="text" id="last-name" />
+      <br /><br />
+
+      <button id="generate-ticket">Generate ticket</button>
+    </div>
+    <br /><br />
+
+    <div id="qr-code"></div>
+
+    <script type="module" src="/js/ticket.js"></script>
+  </body>
+</html>
