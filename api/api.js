@@ -3,7 +3,6 @@ const { Pool } = require("pg");
 const QRCode = require("qrcode");
 const dotenv = require("dotenv");
 const { auth: jwtAuth } = require("express-oauth2-jwt-bearer");
-const cors = require('cors');
 
 dotenv.config();
 const app = express();
@@ -25,10 +24,6 @@ const pool = new Pool({
 });
 
 app.use(express.json());
-app.use(cors({
-    origin: 'https://web2-lab1-lcu4.onrender.com',
-    credentials: true
-}));
 
 app.listen(8000, () => {
     console.log(`Listening on https://web2-lab1-api.onrender.com`);
