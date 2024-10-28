@@ -14,9 +14,8 @@ const fetchTicketData = async () => {
         )
         const data = await response.json();
 
-        const res = await fetch("http://localhost:3000/user");
+        const res = await fetch("https://web2-lab1-lcu4.onrender.com/user");
         const user = await res.json();
-        console.log(user)
 
         document.getElementById('vatin').textContent = data.vatin;
         document.getElementById('first-name').textContent = data.firstName;
@@ -25,7 +24,6 @@ const fetchTicketData = async () => {
         document.getElementById("user").textContent = user.email;
     }
     catch (error) {
-        console.log(error);
         alert("Fetching ticket data was unsuccessfull!");
     }
 }
